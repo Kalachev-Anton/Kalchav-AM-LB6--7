@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <!-- Логотип -->
+            <a href="index.html" class="logo">
+                <img src="pics/logo.svg" alt="Logo">
+            </a>
+
+            <!-- Меню -->
+            <nav class="menu">
+                <a href="about.html">О нас</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="offers.html">Акции</a>
+                <a href="articles.html">Статьи</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+
+            <!-- Корзина и Профиль -->
+            <div class="header-right">
+                <a href="cart.html" class="cart">
+                    <img src="pics/cart-icon-black.svg" alt="Корзина" class="icon">
+                    <span class="cart-text">Корзина</span>
+                </a>
+
+                <a href="profile.html" class="profile">
+                    <img src="pics/profile-icon-black.svg" alt="Профиль" class="icon">
+                    <span class="profile-text">Профиль</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="top-section">
+        <!-- Фоновое изображение -->
+        <div class="background"></div>
+
+        <!-- Логотип -->
+        <div class="logo-container">
+            <img src="pics/logo.svg" alt="Логотип" class="main-logo">
+        </div>
+
+        <!-- Текстовый блок -->
+        <div class="text-container">
+            <h1 class="title">Комфорт и удобство в один клик</h1>
+            <p class="subtitle">Забота и уют в каждом заказе. Добро пожаловать в мир комфорта!</p>
+        </div>
+
+        <!-- Кнопка -->
+        <div class="button-container">
+            <a href="#order" class="cta-button">Как заказать?</a>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="about-us">
+        <div class="about-container">
+            <h2 class="section-title">О нас</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="highlight-title">Some Company Name</h3>
+                    <p class="subtitle">Ваш, комфортный</p>
+                    <p class="description">
+                        Мы - интернет-магазин товаров комфорта для пожилых людей. Наша цель - обеспечить пожилых людей всем необходимым для комфортной и безопасной жизни. Мы понимаем, что пожилые люди заслуживают особого внимания и заботы, поэтому мы с гордостью предлагаем широкий ассортимент товаров, которые помогут им наслаждаться каждым днем. Мы стремимся стать надежным партнером для пожилых людей и их близких, предоставляя высококачественные товары, специально разработанные для поддержания и повышения комфорта и безопасности. Мы хотим быть их первым выбором при поиске товаров, которые помогут им оставаться активными, здоровыми и независимыми.
+                    </p>
+                </div>
+                <div class="about-numbers-wrapper">
+                    <div class="about-numbers">
+                        <div class="number-item">
+                            <span class="number">27</span>
+                            <p class="number-desc">Лучших поставщиков из разных стран</p>
+                        </div>
+                        <div class="number-item">
+                            <span class="number">&gt;80 000</span>
+                            <p class="number-desc">Довольных покупателей в год</p>
+                        </div>
+                        <div class="number-item">
+                            <span class="number">&gt;50</span>
+                            <p class="number-desc">Полезных статей о правильном уходе за пожилыми</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="catalog-container">
+        <!-- Левый блок с фильтрами -->
+        <div class="filters">
+            <h2 class="category-title">Категории</h2>
+            <div class="category-list">
+                <button class="clear-filters">Очистить фильтры</button>
+                <div class="filter">
+                    <input type="checkbox" id="adult-diapers">
+                    <label for="adult-diapers">Подгузники для взрослых</label>
+                </div>
+                <div class="filter">
+                    <input type="checkbox" id="home-medical">
+                    <label for="home-medical">Мед приборы для дома</label>
+                </div>
+                <div class="filter">
+                    <input type="checkbox" id="bedridden-care">
+                    <label for="bedridden-care">Уход за лежачими больными</label>
+                </div>
+                <div class="filter">
+                    <input type="checkbox" id="foot-and-back-care">
+                    <label for="foot-and-back-care">Уход за стопой и спиной</label>
+                </div>
+                <div class="filter">
+                    <input type="checkbox" id="special-meals">
+                    <label for="special-meals">Специальное питание</label>
+                </div>
+                <div class="filter">
+                    <input type="checkbox" id="supports-for-movement">
+                    <label for="supports-for-movement">Опоры при передвижении</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Правый блок с каталогом товаров -->
+        <div class="product-catalog">
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск">
+                <img src="pics/search-icon.svg" alt="Search" class="search-icon-inline">
+                <select id="sort-options">
+                    <option value="default">По умолчанию</option>
+                    <option value="discount-amount">Размер скидки</option>
+                    <option value="From-A-to-Z">От А до Я</option>
+                    <option value="price-up">Цена ↑</option>
+                    <option value="price-down">Цена ↓</option>
+                </select>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/product1.jpg" alt="Продукт 1">
+                    </div>
+                    <div class="product-title">Подгузники-трусы Tena ProSkin Pants Normal Small, объем талии 65-85 см, 15 шт</div>
+                    <div class="product-price">1000 ₽</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/product1.jpg" alt="Продукт 2">
+                    </div>
+                    <div class="product-title">Подгузники-трусы Tena ProSkin Pants Normal Small, объем талии 65-85 см, 15 шт</div>
+                    <div class="product-price">1500 ₽</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/product1.jpg" alt="Продукт 3">
+                    </div>
+                    <div class="product-title">Подгузники-трусы Tena ProSkin Pants Normal Small, объем талии 65-85 см, 15 шт</div>
+                    <div class="product-price">2000 ₽</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/product1.jpg" alt="Продукт 4">
+                    </div>
+                    <div class="product-title">Подгузники-трусы Tena ProSkin Pants Normal Small, объем талии 65-85 см, 15 шт</div>
+                    <div class="product-price">2500 ₽</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/product1.jpg" alt="Продукт 5">
+                    </div>
+                    <div class="product-title">Подгузники-трусы Tena ProSkin Pants Normal Small, объем талии 65-85 см, 15 шт</div>
+                    <div class="product-price">3000 ₽</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/product1.jpg" alt="Продукт 6">
+                    </div>
+                    <div class="product-title">Подгузники-трусы Tena ProSkin Pants Normal Small, объем талии 65-85 см, 15 шт</div>
+                    <div class="product-price">3500 ₽</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/product1.jpg" alt="Продукт 1">
+                    </div>
+                    <div class="product-title">Подгузники-трусы Tena ProSkin Pants Normal Small, объем талии 65-85 см, 15 шт</div>
+                    <div class="product-price">1000 ₽</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/product1.jpg" alt="Продукт 2">
+                    </div>
+                    <div class="product-title">Подгузники-трусы Tena ProSkin Pants Normal Small, объем талии 65-85 см, 15 шт</div>
+                    <div class="product-price">1500 ₽</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/product1.jpg" alt="Продукт 3">
+                    </div>
+                    <div class="product-title">Подгузники-трусы Tena ProSkin Pants Normal Small, объем талии 65-85 см, 15 шт</div>
+                    <div class="product-price">2000 ₽</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/product1.jpg" alt="Продукт 4">
+                    </div>
+                    <div class="product-title">Подгузники-трусы Tena ProSkin Pants Normal Small, объем талии 65-85 см, 15 шт</div>
+                    <div class="product-price">2500 ₽</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/product1.jpg" alt="Продукт 5">
+                    </div>
+                    <div class="product-title">Подгузники-трусы Tena ProSkin Pants Normal Small, объем талии 65-85 см, 15 шт</div>
+                    <div class="product-price">3000 ₽</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/product1.jpg" alt="Продукт 6">
+                    </div>
+                    <div class="product-title">Подгузники-трусы Tena ProSkin Pants Normal Small, объем талии 65-85 см, 15 шт</div>
+                    <div class="product-price">3500 ₽</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="show-more">
+        <a href="catalog.html" class="show-more-link">
+            <span class="show-more-text">Показать больше</span>
+            <span class="show-more-icon"></span>
+        </a>
+    </div>
+
+
+
+
+    <div class="useful-articles">
+        <h2 class="title">Полезные статьи</h2>
+        <div class="articles-container">
+            <div class="article">
+                <div class="rectangle">
+                    <div class="article-header">
+                        <h3 class="article-title">Как поддержать активный образ жизни в зрелом возрасте: товары, которые помогут вам оставаться молодыми и энергичными</h3>
+                        <div class="author-info">
+                            <div class="author-details">
+                                <p class="author-name">Волкова Екатерина</p>
+                                <p class="author-date">28 июля 2023</p>
+                            </div>
+                            <div class="author-photo" style="background-image: url('pics/ekaterina.jpg');"></div>
+                        </div>
+                    </div>
+                    <p class="content">Старение – неизбежный процесс, который наступает со временем. Однако, с правильным подходом и использованием специальных товаров, возраст не является преградой для активного образа жизни. В этой статье мы рассмотрим несколько товаров, которые помогут вам поддерживать молодость, энергию и независимость в зрелом возрасте...</p>
+                </div>
+            </div>
+            <div class="article">
+                <div class="rectangle">
+                    <div class="article-header">
+                        <h3 class="article-title">Пять упражнений для поддержания физической формы в зрелом возрасте</h3>
+                        <div class="author-info">
+                            <div class="author-details">
+                                <p class="author-name">Сахарова Ева1234567890123456</p>
+                                <p class="author-date">15 августа 2023</p>
+                            </div>
+                            <div class="author-photo" style="background-image: url('pics/eva.jpg');"></div>
+                        </div>
+                    </div>
+                    <p class="content">Сохранение физической формы в зрелом возрасте имеет огромное значение для здоровья и благополучия. В этой статье мы рассмотрим пять эффективных упражнений, которые помогут поддерживать физическую активность и укреплять тело в зрелом возрасте...</p>
+                </div>
+            </div>
+            <div class="article">
+                <div class="rectangle">
+                    <div class="article-header">
+                        <h3 class="article-title">Пять полезных привычек для поддержания психологического благополучия в зрелом возрасте</h3>
+                        <div class="author-info">
+                            <div class="author-details">
+                                <p class="author-name">Корнеев Олег</p>
+                                <p class="author-date">7 января 2024</p>
+                            </div>
+                            <div class="author-photo" style="background-image: url('pics/oleg.jpg');"></div>
+                        </div>
+                    </div>
+                    <p class="content">Психологическое благополучие играет важную роль в качестве жизни в зрелом возрасте. В этой статье мы рассмотрим пять полезных привычек, которые помогут поддерживать психологическое благополучие и повысить качество жизни в зрелом возрасте...</p>
+                </div>
+            </div>
+        </div>
+        <div class="show-more">
+            <a href="articles.html" class="show-more-link">
+                <span class="show-more-text">Показать все статьи</span>
+                <span class="show-more-icon"></span>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <a href=""><img src="pics/logo.svg" alt="Logo"></a>
+</div>
+            <div class="footer-links">
+                <div class="footer-link"><a href="#">О нас</a></div>
+                <div class="footer-link"><a href="#">Каталог</a></div>
+                <div class="footer-link"><a href="#">Акции</a></div>
+                <div class="footer-link"><a href="#">Статьи</a></div>
+                <div class="footer-link empty"></div> <!-- Пустой элемент -->
+                <div class="footer-link"><a href="#">Контакты</a></div>
+            </div>
+            <div class="footer-contact">
+                <div class="footer-phone">
+                    <img src="pics/phone-icon.svg" alt="Телефон">
+                    <span>+7 (4812) 65-14-61</span>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://t.me/s/sf_mei" class="icon-telegram" target="_blank" aria-label="Telegram"></a>
+                    <a href="https://vk.com/sf_mpei" class="icon-vk" target="_blank" aria-label="VK"></a>
+                    <a href="https://ok.ru/" class="icon-ok" target="_blank" aria-label="OK"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <span>© Some Company Name 2024</span>
+            </div>
+            <div class="footer-privacy">
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-marketing">
+                <span>Разработка и маркетинг WebCanape</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
