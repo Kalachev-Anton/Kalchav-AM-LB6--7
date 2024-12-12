@@ -164,7 +164,7 @@ body {
     max-width: 1920px;
     height: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 /* Логотип */
@@ -635,6 +635,61 @@ body {
 
 
 
+
+
+.input-error {
+    border: 2px solid red;
+}
+
+.search-icon-inline {
+    cursor: pointer; /* Указатель при наведении */
+}
+
+
+.product-title {
+    font-weight: bold;
+}
+
+/* Подсветка поля ввода с ошибкой */
+input.error {
+    background-color: #ffcccc; /* Красный фон */
+    border: 2px solid red; /* Красная рамка */
+}
+
+/* Сообщение об ошибке как оверлей */
+.error-message {
+    position: absolute;
+    top: 100%; /* Сдвигаем вниз от поля ввода */
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.8); /* Полупрозрачный красный фон */
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 5px;
+    width: 200px;
+}
+
+
+
+
+
 /* Контейнер для кнопки */
 .show-more {
     display: flex;
@@ -816,9 +871,11 @@ body {
 
 /* Общий стиль футера */
 .footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #B6EDED;
+    align-items: center;
     
     padding: 20px;
     color: #111111;
